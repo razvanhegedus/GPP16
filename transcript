@@ -1,0 +1,220 @@
+# Loading project GPP_16
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project GPP16
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of control_unit.sv was successful.
+# Compile of ins_mem.sv was successful.
+# Compile of control_unit.sv was successful.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of ins_mem.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of control_unit.sv was successful.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of ins_mem.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of control_unit.sv was successful.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of ins_mem.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of tb_cpu.sv was successful.
+# Compile of tb_cpu.sv was successful.
+vsim work.tb_cpu
+# vsim work.tb_cpu 
+# Start time: 18:22:18 on Dec 15,2025
+# Loading sv_std.std
+# Loading work.tb_cpu
+# Loading work.GPP16microprocessor
+# Loading work.ins_mem
+# Loading work.reg_file
+# ** Error: (vsim-3033) Instantiation of 'alu16' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu/dut File: C:/Razvan/year3/cet/project/GPP16microprocessor.sv Line: 59
+#         Searched libraries:
+#             C:/Razvan/year3/cet/project/work
+# Loading work.control_unit
+# Error loading design
+# End time: 18:22:19 on Dec 15,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 31
+# Compile of control_unit.sv was successful.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of ins_mem.sv was successful.
+# Compile of tb_cpu.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_cpu
+# vsim work.tb_cpu 
+# Start time: 18:23:48 on Dec 15,2025
+# Loading sv_std.std
+# Loading work.tb_cpu
+# Loading work.GPP16microprocessor
+# Loading work.ins_mem
+# Loading work.reg_file
+# Loading work.alu_16
+# Loading work.control_unit
+run 300
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/pc
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/clk
+vsim work.tb_cpu
+# End time: 18:30:04 on Dec 15,2025, Elapsed time: 0:06:16
+# Errors: 0, Warnings: 2
+# vsim work.tb_cpu 
+# Start time: 18:30:04 on Dec 15,2025
+# Loading sv_std.std
+# Loading work.tb_cpu
+# Loading work.GPP16microprocessor
+# Loading work.ins_mem
+# Loading work.reg_file
+# Loading work.alu_16
+# Loading work.control_unit
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/pc
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/clk
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rst
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/instr
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/opcode
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rd
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rs
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rs
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rt
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/a
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/b
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/alu_y
+add wave -position insertpoint /tb_cpu/dut/alu_func
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/wd
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/we
+run 300
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 18:44:23 on Dec 15,2025, Elapsed time: 0:14:19
+# Errors: 0, Warnings: 1
+# Compile of reg_file.sv was successful.
+vsim work.tb_cpu
+# vsim work.tb_cpu 
+# Start time: 18:49:04 on Dec 15,2025
+# Loading sv_std.std
+# Loading work.tb_cpu
+# Loading work.GPP16microprocessor
+# Loading work.ins_mem
+# Loading work.reg_file
+# Loading work.alu_16
+# Loading work.control_unit
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/pc
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/instr
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/opcode
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rd
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rs
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rt
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/a
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/b
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/alu_y
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/alu_func
+add wave -position insertpoint  \
+{sim:/tb_cpu/dut/rf/sram[0]}
+add wave -position insertpoint  \
+{sim:/tb_cpu/dut/rf/sram[1]}
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/wd
+add wave -position insertpoint /tb_cpu/dut/we
+run 300
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/clk
+add wave -position insertpoint  \
+sim:/tb_cpu/dut/rst
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 300
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of control_unit.sv was successful.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of ins_mem.sv was successful.
+# Compile of tb_cpu.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu
+# Loading work.GPP16microprocessor
+# Loading work.ins_mem
+# Loading work.reg_file
+# Loading work.alu_16
+# Loading work.control_unit
+run 400
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+run 1000
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run 100ns
+# Compile of reg_file.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of control_unit.sv was successful.
+# Compile of GPP16microprocessor.sv was successful.
+# Compile of alu_16.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of register.sv was successful.
+# Compile of ins_mem.sv was successful.
+# Compile of tb_cpu.sv was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_cpu
+# Loading work.GPP16microprocessor
+# Loading work.ins_mem
+# Loading work.reg_file
+# Loading work.alu_16
+# Loading work.control_unit
+run 200ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 

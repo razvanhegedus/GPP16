@@ -1,0 +1,97 @@
+module GPP16microprocessor (
+    input  logic clk,
+    input  logic rst
+);
+
+    // ======================
+    // PROGRAM COUNTER
+    // ======================
+    logic [15:0] pc;
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst)
+            pc <= 16'd0;
+        else
+            pc <= pc + 1;
+    end
+
+    // ======================
+    // INSTRUCTION MEMORY
+    // ======================
+    logic [15:0] instr;
+
+    ins_mem imem (
+        .addr(pc),
+        .instr(instr)
+    );
+
+    // ======================
+    // INSTRUCTION REGISTER  <<< IMPORTANT
+    // ======================
+    logic [15:0] instr_r;
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst)
+            instr_r <= 16'd0;
+        else
+            instr_r <= instr;
+    end
+
+    // ======================
+    // DECODE (FROM instr_r)
+    // ======================
+    logic [4:0] opcode;
+    logic [2:0] rd, rs, rt;
+
+    assign opcode = instr_r[15:11];
+    assign rd     = instr_r[10:8];
+    assign rs     = instr_r[7:5];
+    assign rt     = instr_r[4:2];
+
+    // ======================
+    // REGISTER FILE
+    // ======================
+    logic [15:0] a, b, wd;
+    logic we;
+
+    reg_file rf (
+        .RA1(rs),
+        .RA2(rt),
+        .WA3(rd),
+        .WE3(we),
+        .clk(clk),
+        .rst(rst),
+        .WD3(wd),
+        .RD1(a),
+        .RD2(b)
+    );
+
+    // ======================
+    // ALU
+    // ======================
+    logic [15:0] alu_y;
+    logic [4:0]  alu_func;
+
+    alu_16 alu (
+        .a(a),
+        .b(b),
+        .func(alu_func),
+        .y(alu_y)
+    );
+
+    // ======================
+    // CONTROL UNIT (OPTION A)
+    // ======================
+    control_unit cu (
+        .opcode(opcode),
+        .we3(we),
+        .alu_func(alu_func)
+    );
+
+    // ======================
+    // WRITE-BACK
+    // ======================
+    assign wd = alu_y;
+
+endmodule
+
