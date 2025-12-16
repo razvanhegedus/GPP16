@@ -1,0 +1,21 @@
+# ModelSim / Questa
+work/
+modelsim.ini
+transcript
+vsim.wlf
+*.wlf
+*.vcd
+
+# Quartus
+db/
+incremental_db/
+output_files/
+*.rpt
+*.sof
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+Thumbs.db
