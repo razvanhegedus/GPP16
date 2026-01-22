@@ -24,6 +24,37 @@ The processor contains 8 registers (`R0` through `R7`). While they are general-p
 
 The ISA is split into data movement, arithmetic/logic, branching, and system control. Most instructions use a prefix bit to distinguish between Register (`r`) and Immediate (`i`) modes.
 
+## Instruction Encoding
+
+The 16-bit instruction word is divided into the Opcode, Prefix, and Operands.
+
+### Standard Format (Register/Immediate)
+Used for arithmetic, logic, and data movement.
+*   **Bits 15-10 (6 bits):** Opcode
+*   **Bit 9 (1 bit):** Prefix (`0` = Register Mode, `1` = Immediate Mode)
+*   **Bits 8-6 (3 bits):** Destination Register (`rd`)
+*   **Bits 5-3 (3 bits):** Source Register 1 (`rs1`) or part of Immediate
+*   **Bits 2-0 (3 bits):** Source Register 2 (`rs2`) or part of Immediate
+
+| Opcode | Prefix | Dest Reg (rd) | Source 1 (rs) | Source 2 / Extra |
+| :---: | :---: | :---: | :---: | :---: |
+| Bits 15-10 | Bit 9 | Bits 8-6 | Bits 5-3 | Bits 2-0 |
+
+### Conditional Jump Format
+The address for conditional jumps is calculated using a signed 9-bit offset.
+*   **Bits 15-10 (6 bits):** Opcode
+*   **Bit 9 (1 bit):** Prefix (Typically `1` for immediate offsets in assembler)
+*   **Bits 8-0 (9 bits):** Signed Address Offset / Immediate
+
+| Opcode | Prefix | Address / Offset |
+| :---: | :---: | :---: |
+| Bits 15-10 | Bit 9 | Bits 8-0 |
+
+## Instruction Set Architecture (ISA)
+
+The table below lists all supported instructions. The **Prefix** determines if the last operand is a register (`r`) or an immediate value (`i`).
+
+
 ### Instruction Table
 
 | Mnemonic | Description | Syntax (Example) | Opcode (Bin) |
