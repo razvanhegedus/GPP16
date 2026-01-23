@@ -11,177 +11,268 @@ cModel Technology
 Z0 dC:/Razvan/year3/cet/project
 valu_16
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1765854585
+Z2 !s110 1769126192
 !i10b 1
-!s100 gXn>aGgClJn6z]doQFdoV2
+!s100 0alB]d;hS]Th?D0`X;o1j3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IUP?QlKGcczC[0aMfB;nzA3
+Ihd1D3PIN3nVXDBb<;ZOfj3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1765851473
-8C:/Razvan/year3/cet/project/alu_16.sv
-FC:/Razvan/year3/cet/project/alu_16.sv
-!i122 35
-L0 1 28
-Z5 OV;L;2020.1;71
+Z5 w1769124300
+Z6 8alu_16.sv
+Z7 Falu_16.sv
+!i122 0
+L0 1 71
+Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1765854585.000000
-!s107 C:/Razvan/year3/cet/project/alu_16.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/alu_16.sv|
+Z9 !s108 1769126192.000000
+!s107 register.sv|reg_file.sv|muxN.sv|muxflags.sv|extension.sv|control_unit.sv|alu_16.sv|GPP16microprocessor.sv|
+Z10 !s90 -reportprogress|300|GPP16microprocessor.sv|alu_16.sv|control_unit.sv|extension.sv|muxflags.sv|muxN.sv|reg_file.sv|register.sv|
 !i113 1
-Z7 o-work work -sv
-Z8 tCvgOpt 0
+Z11 tCvgOpt 0
 vcontrol_unit
 R1
 R2
 !i10b 1
-!s100 0_WJ<]V7YaXPBkhi@Lmg42
+!s100 U`c1oKQoO3=4c:PP`@S`h1
 R3
-IEf:]YQ5:nT?FG>T3cXGKR1
+IG:MCl11hM;[@oZhihdlkS3
 R4
 S1
 R0
-w1765851476
-8C:/Razvan/year3/cet/project/control_unit.sv
-FC:/Razvan/year3/cet/project/control_unit.sv
-!i122 33
-L0 1 52
-R5
+w1769124508
+8control_unit.sv
+Fcontrol_unit.sv
+!i122 0
+L0 1 802
+R8
 r1
 !s85 0
 31
-R6
-!s107 C:/Razvan/year3/cet/project/control_unit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/control_unit.sv|
+R9
+Z12 !s107 register.sv|reg_file.sv|muxN.sv|muxflags.sv|extension.sv|control_unit.sv|alu_16.sv|GPP16microprocessor.sv|
+R10
 !i113 1
-R7
+R11
+vextension
+R1
+R2
+!i10b 1
+!s100 ei<U^<P8D?B5MW>82m[Dz0
+R3
+Iega?AHHXnFESU]@?KAYA_0
+R4
+S1
+R0
+w1769124941
+8extension.sv
+Fextension.sv
+!i122 0
+L0 1 30
 R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+R11
+vGPP16_tb
+R1
+R2
+!i10b 1
+!s100 Ii>;AfgZG`3@n90CJTZD^1
+R3
+I8SVUiO<TaHgOZ39Hz]J1[2
+R4
+S1
+R0
+Z13 w1769125680
+Z14 8GPP16microprocessor.sv
+Z15 FGPP16microprocessor.sv
+!i122 0
+L0 128 53
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+R11
+n@g@p@p16_tb
 vGPP16microprocessor
 R1
 R2
 !i10b 1
-!s100 FzWgeo<H5k7O^PBXmZY_I2
+!s100 H;P7mXoM^3IE3n^n1QGJO0
 R3
-I@`alM0^:jnYfc6Rb:fnM22
+I^oUI`^igamo:jH3n?SmaK1
 R4
 S1
 R0
-w1765854512
-8C:/Razvan/year3/cet/project/GPP16microprocessor.sv
-FC:/Razvan/year3/cet/project/GPP16microprocessor.sv
-!i122 34
-L0 1 96
-R5
+R13
+R14
+R15
+!i122 0
+L0 11 102
+R8
 r1
 !s85 0
 31
-R6
-!s107 C:/Razvan/year3/cet/project/GPP16microprocessor.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/GPP16microprocessor.sv|
+R9
+R12
+R10
 !i113 1
-R7
-R8
+R11
 n@g@p@p16microprocessor
-vins_mem
+vlatch_mem
 R1
 R2
 !i10b 1
-!s100 ?Z:zG>R@2`M:_01z`H`MG2
+!s100 9XeH30k42D_CCd0di:z661
 R3
-I7OK]THii`Jf4gD18^XY393
+I[CmilV`jT61NdT@dZT:fK1
 R4
 S1
 R0
-w1765854580
-8C:/Razvan/year3/cet/project/ins_mem.sv
-FC:/Razvan/year3/cet/project/ins_mem.sv
-!i122 38
-Z9 L0 1 16
-R5
+R13
+R14
+R15
+!i122 0
+L0 114 13
+R8
 r1
 !s85 0
 31
-R6
-!s107 C:/Razvan/year3/cet/project/ins_mem.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/ins_mem.sv|
+R9
+R12
+R10
 !i113 1
-R7
+R11
+vmuxflags
+R1
+R2
+!i10b 1
+!s100 MBV7SF<h0@F;z5UAz6@l>3
+R3
+I2S5L`h`dj4J9OI?d[MKM81
+R4
+S1
+R0
+w1769124669
+8muxflags.sv
+Fmuxflags.sv
+!i122 0
+L0 1 5
 R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+R11
+vmuxN
+R1
+R2
+!i10b 1
+!s100 Dl@[:EafYeK^a]1WP6zPl3
+R3
+IiZ092KYO4KN@91fVfGYmg1
+R4
+S1
+R0
+w1769124708
+8muxN.sv
+FmuxN.sv
+!i122 0
+L0 1 9
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+R11
+nmux@n
 vreg_file
 R1
 R2
 !i10b 1
-!s100 MhARU_>P=4hMN5baNCihY2
+!s100 koHZQ5UWcFBAAELY87=CI1
 R3
-IO??g9]i^ggm>@d`Lf2VFC3
+IleF[6[5>2VX>CmeEP@LTm1
 R4
 S1
 R0
-w1765853806
-8C:/Razvan/year3/cet/project/reg_file.sv
-FC:/Razvan/year3/cet/project/reg_file.sv
-!i122 36
-L0 1 39
-R5
+w1769124457
+8reg_file.sv
+Freg_file.sv
+!i122 0
+L0 1 36
+R8
 r1
 !s85 0
 31
-R6
-!s107 C:/Razvan/year3/cet/project/reg_file.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/reg_file.sv|
+R9
+R12
+R10
 !i113 1
-R7
-R8
+R11
 vregister
 R1
 R2
 !i10b 1
-!s100 37B?255i30C<zDH@PbTU@3
+!s100 d0W0dFzhBD6LTi_^9PCCA1
 R3
-IaWW<PVZ4jz3lXj_`dNYjH0
+I07nF_9=mmAz5E9Cc]A9^C0
 R4
 S1
 R0
-w1765851240
-8C:/Razvan/year3/cet/project/register.sv
-FC:/Razvan/year3/cet/project/register.sv
-!i122 37
-R9
-R5
+w1769124563
+8register.sv
+Fregister.sv
+!i122 0
+L0 1 16
+R8
 r1
 !s85 0
 31
-R6
-!s107 C:/Razvan/year3/cet/project/register.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/register.sv|
+R9
+R12
+R10
 !i113 1
-R7
-R8
-vtb_cpu
+R11
+vtb_alu_16
 R1
 R2
 !i10b 1
-!s100 z`2zJJ6@^B_fV3XYE2_Fb0
+!s100 0S5EQLFkXGL7;@>g>^emV2
 R3
-IeYB5>?k7WUWW05>o<YD0_2
+IzCfToUcHQn5gn^4c7kL:a2
 R4
 S1
 R0
-w1765851574
-8C:/Razvan/year3/cet/project/tb_cpu.sv
-FC:/Razvan/year3/cet/project/tb_cpu.sv
-!i122 39
-L0 3 42
 R5
+R6
+R7
+!i122 0
+L0 73 36
+R8
 r1
 !s85 0
 31
-R6
-!s107 C:/Razvan/year3/cet/project/tb_cpu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Razvan/year3/cet/project/tb_cpu.sv|
+R9
+R12
+R10
 !i113 1
-R7
-R8
+R11

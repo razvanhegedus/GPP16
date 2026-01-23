@@ -1,20 +1,3 @@
-# Loading project GPP_16
-# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
-# Loading project GPP16
-# Compile of GPP16microprocessor.sv was successful.
-# Compile of alu_16.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of register.sv was successful.
-# Compile of control_unit.sv was successful.
-# Compile of ins_mem.sv was successful.
-# Compile of control_unit.sv was successful.
-# Compile of GPP16microprocessor.sv was successful.
-# Compile of alu_16.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of register.sv was successful.
-# Compile of ins_mem.sv was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of GPP16microprocessor.sv was successful.
 # Compile of control_unit.sv was successful.
 # Compile of GPP16microprocessor.sv was successful.
 # Compile of alu_16.sv was successful.
@@ -28,193 +11,152 @@
 # Compile of reg_file.sv was successful.
 # Compile of register.sv was successful.
 # Compile of ins_mem.sv was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of tb_cpu.sv was successful.
-# Compile of tb_cpu.sv was successful.
-vsim work.tb_cpu
-# vsim work.tb_cpu 
-# Start time: 18:22:18 on Dec 15,2025
+# Compile of muxflags.sv was successful.
+# Compile of muxN.sv was successful with warnings.
+# 8 compiles, 0 failed with no errors.
+do run_gpp16.txt
+# GPP16microprocessor.sv alu_16.sv control_unit.sv extension.sv muxflags.sv muxN.sv reg_file.sv register.sv
+# GPP16_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:46:20 on Jan 22,2026
+# vlog -reportprogress 300 GPP16microprocessor.sv alu_16.sv control_unit.sv extension.sv muxflags.sv muxN.sv reg_file.sv register.sv 
+# -- Compiling module GPP16microprocessor
+# -- Compiling module latch_mem
+# -- Compiling module GPP16_tb
+# -- Compiling module alu_16
+# -- Compiling module tb_alu_16
+# -- Compiling module control_unit
+# -- Compiling module extension
+# -- Compiling module muxflags
+# -- Compiling module muxN
+# ** Warning: muxN.sv(5): (vlog-13314) Defaulting port 'DI' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling module reg_file
+# -- Compiling module register
+# 
+# Top level modules:
+# 	GPP16_tb
+# 	tb_alu_16
+# End time: 15:46:20 on Jan 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" GPP16_tb 
+# Start time: 15:46:20 on Jan 22,2026
 # Loading sv_std.std
-# Loading work.tb_cpu
+# Loading work.GPP16_tb
 # Loading work.GPP16microprocessor
-# Loading work.ins_mem
+# Loading work.register
+# Loading work.muxN
 # Loading work.reg_file
+# Loading work.extension
 # ** Error: (vsim-3033) Instantiation of 'alu16' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_cpu/dut File: C:/Razvan/year3/cet/project/GPP16microprocessor.sv Line: 59
+#    Time: 0 ps  Iteration: 0  Instance: /GPP16_tb/uut File: GPP16microprocessor.sv Line: 85
 #         Searched libraries:
 #             C:/Razvan/year3/cet/project/work
+# Loading work.latch_mem
+# Loading work.muxflags
 # Loading work.control_unit
 # Error loading design
-# End time: 18:22:19 on Dec 15,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 31
-# Compile of control_unit.sv was successful.
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run_gpp16.txt PAUSED at line 29
+# Compile of extension.sv was successful.
 # Compile of GPP16microprocessor.sv was successful.
-# Compile of alu_16.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of register.sv was successful.
-# Compile of ins_mem.sv was successful.
-# Compile of tb_cpu.sv was successful.
-# 7 compiles, 0 failed with no errors.
-vsim work.tb_cpu
-# vsim work.tb_cpu 
-# Start time: 18:23:48 on Dec 15,2025
-# Loading sv_std.std
-# Loading work.tb_cpu
-# Loading work.GPP16microprocessor
-# Loading work.ins_mem
-# Loading work.reg_file
-# Loading work.alu_16
-# Loading work.control_unit
-run 300
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/pc
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/clk
-vsim work.tb_cpu
-# End time: 18:30:04 on Dec 15,2025, Elapsed time: 0:06:16
-# Errors: 0, Warnings: 2
-# vsim work.tb_cpu 
-# Start time: 18:30:04 on Dec 15,2025
-# Loading sv_std.std
-# Loading work.tb_cpu
-# Loading work.GPP16microprocessor
-# Loading work.ins_mem
-# Loading work.reg_file
-# Loading work.alu_16
-# Loading work.control_unit
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/pc
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/clk
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rst
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/instr
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/opcode
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rd
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rs
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rs
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rt
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/a
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/b
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/alu_y
-add wave -position insertpoint /tb_cpu/dut/alu_func
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/wd
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/we
-run 300
-# WARNING: No extended dataflow license exists
-quit -sim
-# End time: 18:44:23 on Dec 15,2025, Elapsed time: 0:14:19
+do run_gpp16.txt
+# GPP16microprocessor.sv alu_16.sv control_unit.sv extension.sv muxflags.sv muxN.sv reg_file.sv register.sv
+# GPP16_tb
+# End time: 15:48:20 on Jan 22,2026, Elapsed time: 0:02:00
+# Errors: 1, Warnings: 14
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:48:20 on Jan 22,2026
+# vlog -reportprogress 300 GPP16microprocessor.sv alu_16.sv control_unit.sv extension.sv muxflags.sv muxN.sv reg_file.sv register.sv 
+# -- Compiling module GPP16microprocessor
+# -- Compiling module latch_mem
+# -- Compiling module GPP16_tb
+# -- Compiling module alu_16
+# -- Compiling module tb_alu_16
+# -- Compiling module control_unit
+# -- Compiling module extension
+# -- Compiling module muxflags
+# -- Compiling module muxN
+# ** Warning: muxN.sv(5): (vlog-13314) Defaulting port 'DI' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling module reg_file
+# -- Compiling module register
+# 
+# Top level modules:
+# 	GPP16_tb
+# 	tb_alu_16
+# End time: 15:48:20 on Jan 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# Compile of reg_file.sv was successful.
-vsim work.tb_cpu
-# vsim work.tb_cpu 
-# Start time: 18:49:04 on Dec 15,2025
+# vsim -voptargs="+acc" GPP16_tb 
+# Start time: 15:48:21 on Jan 22,2026
 # Loading sv_std.std
-# Loading work.tb_cpu
+# Loading work.GPP16_tb
 # Loading work.GPP16microprocessor
-# Loading work.ins_mem
+# Loading work.register
+# Loading work.muxN
 # Loading work.reg_file
+# Loading work.extension
 # Loading work.alu_16
+# Loading work.latch_mem
+# Loading work.muxflags
 # Loading work.control_unit
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/pc
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/instr
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/opcode
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rd
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rs
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rt
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/a
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/b
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/alu_y
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/alu_func
-add wave -position insertpoint  \
-{sim:/tb_cpu/dut/rf/sram[0]}
-add wave -position insertpoint  \
-{sim:/tb_cpu/dut/rf/sram[1]}
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/wd
-add wave -position insertpoint /tb_cpu/dut/we
-run 300
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/clk
-add wave -position insertpoint  \
-sim:/tb_cpu/dut/rst
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run 300
-# GetModuleFileName: The specified module could not be found.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /GPP16_tb File: GPP16microprocessor.sv Line: 162
+# ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (16) for port 'DO'. The port definition is at: extension.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /GPP16_tb/uut/ext16 File: GPP16microprocessor.sv Line: 77
+run -all
+# OUTPUT:   7
+# OUTPUT:   0
+# OUTPUT:   7
+# ** Note: $stop    : GPP16microprocessor.sv(173)
+#    Time: 2770 ps  Iteration: 0  Instance: /GPP16_tb
+# Break in Module GPP16_tb at GPP16microprocessor.sv line 173
+quit -sim
+# End time: 15:56:26 on Jan 22,2026, Elapsed time: 0:08:05
+# Errors: 0, Warnings: 3
+do run_gpp16.txt
+# GPP16microprocessor.sv alu_16.sv control_unit.sv extension.sv muxflags.sv muxN.sv reg_file.sv register.sv
+# GPP16_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:56:32 on Jan 22,2026
+# vlog -reportprogress 300 GPP16microprocessor.sv alu_16.sv control_unit.sv extension.sv muxflags.sv muxN.sv reg_file.sv register.sv 
+# -- Compiling module GPP16microprocessor
+# -- Compiling module latch_mem
+# -- Compiling module GPP16_tb
+# -- Compiling module alu_16
+# -- Compiling module tb_alu_16
+# -- Compiling module control_unit
+# -- Compiling module extension
+# -- Compiling module muxflags
+# -- Compiling module muxN
+# ** Warning: muxN.sv(5): (vlog-13314) Defaulting port 'DI' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# -- Compiling module reg_file
+# -- Compiling module register
 # 
-# 
-restart -f
-run 1000
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of control_unit.sv was successful.
-# Compile of GPP16microprocessor.sv was successful.
-# Compile of alu_16.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of register.sv was successful.
-# Compile of ins_mem.sv was successful.
-# Compile of tb_cpu.sv was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_cpu
+# Top level modules:
+# 	GPP16_tb
+# 	tb_alu_16
+# End time: 15:56:32 on Jan 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" GPP16_tb 
+# Start time: 15:56:32 on Jan 22,2026
+# Loading sv_std.std
+# Loading work.GPP16_tb
 # Loading work.GPP16microprocessor
-# Loading work.ins_mem
+# Loading work.register
+# Loading work.muxN
 # Loading work.reg_file
+# Loading work.extension
 # Loading work.alu_16
+# Loading work.latch_mem
+# Loading work.muxflags
 # Loading work.control_unit
-run 400
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart -f
-run 1000
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run 100ns
-# Compile of reg_file.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of control_unit.sv was successful.
-# Compile of GPP16microprocessor.sv was successful.
-# Compile of alu_16.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of register.sv was successful.
-# Compile of ins_mem.sv was successful.
-# Compile of tb_cpu.sv was successful.
-# 7 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_cpu
-# Loading work.GPP16microprocessor
-# Loading work.ins_mem
-# Loading work.reg_file
-# Loading work.alu_16
-# Loading work.control_unit
-run 200ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /GPP16_tb File: GPP16microprocessor.sv Line: 162
+# ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (16) for port 'DO'. The port definition is at: extension.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /GPP16_tb/uut/ext16 File: GPP16microprocessor.sv Line: 77
+run -all
+# OUTPUT:   7
+# OUTPUT:   0
+# ** Note: $stop    : GPP16microprocessor.sv(173)
+#    Time: 2770 ps  Iteration: 0  Instance: /GPP16_tb
+# Break in Module GPP16_tb at GPP16microprocessor.sv line 173
